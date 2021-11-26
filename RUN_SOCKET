@@ -1,0 +1,26 @@
+#!/bin/bash
+
+now=$(date +"%T")
+curr_path=$PWD
+script_path="${PWD}/Socket_telefonica_delv"
+log_path="${PWD}/log/log_run.log"
+
+
+echo "\n### Script Socket ${now} ###\n" >> $log_path
+
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root" >> $log_path
+  exit
+fi
+
+
+echo $script_path
+
+#sudo xvfb-run -a $script_path
+sudo xvfb-run -a sudo $script_path >> $log_path
+sleep 10
+
+
+echo "#### FINALIZANDO ####"
+pause 'Press [Enter] key to continue...'
+

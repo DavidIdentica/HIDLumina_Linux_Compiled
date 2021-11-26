@@ -1,0 +1,10 @@
+
+
+#""" To run the script , a helper has been defined """
+# Run the script RUN_SCRIPT as super user ;
+	sudo ./RUN_SCRIPT
+
+# To define the service in orther to always work on boot 
+# run the srcipt called manage_service.sh
+	./manage_service
+

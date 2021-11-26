@@ -1,0 +1,14 @@
+[Unit]
+Description=Start HIDLumina Socket
+
+[Service]
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+ExecStart=/home/pi/HIDLumina/RUN_SOCKET
+Restart=always
+RestartSec=10s
+KillMode=process
+TimeoutSec=infinity
+
+[Install]
+WantedBy=graphical.target

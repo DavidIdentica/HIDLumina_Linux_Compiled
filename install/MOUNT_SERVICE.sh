@@ -65,7 +65,7 @@ fi
 
 { #Try : Copy the file into Services Files
     echo "Montando Archivo"
-    #cp hidlum_sock.service /lib/systemd/system/
+    cp hidlum_sock.service /lib/systemd/system/
 } || { #Catch
     echo "Error Copying"
     exit

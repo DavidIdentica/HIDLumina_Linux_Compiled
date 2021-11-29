@@ -9,7 +9,9 @@ log_path="${PWD}/log/log_run.log"
 echo "\n### Script Socket ${now} ###\n" >> $log_path
 
 if [ "$EUID" -ne 0 ]
-  then echo "Please run as root" >> $log_path
+then
+  echo "Please run as root $now" >> $log_path
+  echo "Please run as root $now"
   exit
 fi
 

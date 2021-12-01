@@ -4,7 +4,7 @@ Description=Start HIDLumina Socket
 [Service]
 Environment=DISPLAY=:0
 Environment=XAUTHORITY=/home/pi/.Xauthority
-ExecStart=/home/pi/HIDLumina/RUN_SOCKET
+ExecStart=/home/pi/HIDLuminaCompiled/HIDLumina_Linux_Compiled/RUN_SOCKET
 Restart=always
 RestartSec=10s
 KillMode=process
